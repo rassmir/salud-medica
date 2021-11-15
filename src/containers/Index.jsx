@@ -2,10 +2,11 @@ import React, {Fragment, useState} from "react";
 import {withRouter} from 'react-router-dom';
 import Step1 from "./Step1";
 import Step2 from "./Step2";
+import Step3 from "./Step3";
 
 const Index = () => {
     const [stepper, setSteeper] = useState({
-        step: 2
+        step: 3
     })
     const [user, setUser] = useState({
         numDocumento: '',
@@ -43,6 +44,10 @@ const Index = () => {
         case 2:
             return (
                 <Step2/>
+            );
+        case 3:
+            return (
+                <Step3/>
             );
         default:
             (console.log('Steeper Seguro de Salud'))
