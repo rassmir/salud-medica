@@ -7,8 +7,12 @@ module.exports = {
                 bg: '40rem',
                 bgLg: '44rem'
             },
+            width: {
+                w308: '30.8rem'
+            },
             fontSize: {
-                12: '12px'
+                12: '12px',
+                14: '14px'
             },
             padding: {
                 pdr: '36rem',
@@ -24,7 +28,7 @@ module.exports = {
                 custom3: '#C5CBE0',
                 custom4: '#F0F2FA',
                 green: {
-                    primary:'#83CC5E'
+                    primary: '#83CC5E'
                 }
             }
         },
