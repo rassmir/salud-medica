@@ -2,7 +2,13 @@ import React, {Fragment} from 'react';
 import {withRouter} from 'react-router-dom';
 import Base from "../assets/img/Base.png"
 
-const Step2 = () => {
+const Step2 = (props) => {
+    const next = () => {
+        props.nextStep();
+    };
+    const prev = () => {
+        props.prevStep();
+    };
     return (
         <Fragment>
             <div className="flex gap-52">
@@ -84,7 +90,9 @@ const Step2 = () => {
                             <div className="mt-12 flex justify-end">
                                 <button
                                     className="bg-custom4 text-custom3 font-bold py-4 px-8 rounded-lg uppercase"
-                                    type="button">
+                                    type="button"
+                                    onClick={()=>next()}
+                                >
                                     Continuar
                                 </button>
                             </div>

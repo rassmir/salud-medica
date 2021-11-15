@@ -4,9 +4,15 @@ import Base from "../assets/img/Base.png";
 import p1 from "../assets/img/p1.png";
 import p2 from "../assets/img/p2.png";
 import {FaHeart} from "react-icons/all";
-import { Tab } from '@headlessui/react'
+import {Tab} from '@headlessui/react'
 
-const Step3 = () => {
+const Step3 = (props) => {
+    const next = () => {
+        props.nextStep();
+    };
+    const prev = () => {
+        props.prevStep();
+    };
     return (
         <Fragment>
             <div className="flex gap-52">
@@ -96,7 +102,8 @@ const Step3 = () => {
                                         <div className="mt-8">
                                             <div className="border-2 border-custom4 rounded-lg">
                                                 <div className="bg-custom4 text-center py-2">
-                                                    <p className="text-custom2 font-extrabold text-14">Cuentas con estos beneficios:</p>
+                                                    <p className="text-custom2 font-extrabold text-14">Cuentas con estos
+                                                        beneficios:</p>
                                                 </div>
                                                 <div className="flex py-6 px-8">
                                                     <div className="w-8/12">
@@ -120,27 +127,33 @@ const Step3 = () => {
                                                     <ul>
                                                         <li className="flex items-center gap-3">
                                                             <FaHeart className="w-3.5 h-3.5 text-primary"/>
-                                                            <p className="text-xl">Lima <span className="text-12">(zona de cobertura)</span></p>
+                                                            <p className="text-xl">Lima <span className="text-12">(zona de cobertura)</span>
+                                                            </p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-6">
                                                             <FaHeart className="w-3.5 h-3.5 text-primary"/>
-                                                            <p className="text-xl">+30 clínicas <span className="text-12">(en red afiliada)</span></p>
+                                                            <p className="text-xl">+30 clínicas <span
+                                                                className="text-12">(en red afiliada)</span></p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-5">
                                                             <FaHeart className="w-3.5 h-3.5 text-custom3"/>
-                                                            <p className="text-custom3 line-through">Médico a domicilio</p>
+                                                            <p className="text-custom3 line-through">Médico a
+                                                                domicilio</p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-5">
                                                             <FaHeart className="w-3.5 h-3.5 text-custom3"/>
-                                                            <p className="text-custom3 line-through">Chequeos preventivos</p>
+                                                            <p className="text-custom3 line-through">Chequeos
+                                                                preventivos</p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-5">
                                                             <FaHeart className="w-3.5 h-3.5 text-custom3"/>
-                                                            <p className="text-custom3 line-through">Reembolso nacional</p>
+                                                            <p className="text-custom3 line-through">Reembolso
+                                                                nacional</p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-5">
                                                             <FaHeart className="w-3.5 h-3.5 text-custom3"/>
-                                                            <p className="text-custom3 line-through">Reembolso internacional</p>
+                                                            <p className="text-custom3 line-through">Reembolso
+                                                                internacional</p>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -151,7 +164,8 @@ const Step3 = () => {
                                         <div className="mt-8">
                                             <div className="border-2 border-custom4 rounded-lg">
                                                 <div className="bg-custom4 text-center py-2">
-                                                    <p className="text-custom2 font-extrabold text-14">Cuentas con estos beneficios:</p>
+                                                    <p className="text-custom2 font-extrabold text-14">Cuentas con estos
+                                                        beneficios:</p>
                                                 </div>
                                                 <div className="flex py-6 px-8">
                                                     <div className="w-8/12">
@@ -175,11 +189,13 @@ const Step3 = () => {
                                                     <ul>
                                                         <li className="flex items-center gap-3">
                                                             <FaHeart className="w-3.5 h-3.5 text-primary"/>
-                                                            <p className="text-xl">Lima <span className="text-12">(zona de cobertura)</span></p>
+                                                            <p className="text-xl">Lima <span className="text-12">(zona de cobertura)</span>
+                                                            </p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-6">
                                                             <FaHeart className="w-3.5 h-3.5 text-primary"/>
-                                                            <p className="text-xl">+30 clínicas <span className="text-12">(en red afiliada)</span></p>
+                                                            <p className="text-xl">+30 clínicas <span
+                                                                className="text-12">(en red afiliada)</span></p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-5">
                                                             <FaHeart className="w-3.5 h-3.5 text-primary"/>
@@ -191,11 +207,13 @@ const Step3 = () => {
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-5">
                                                             <FaHeart className="w-3.5 h-3.5 text-custom3"/>
-                                                            <p className="text-custom3 line-through">Reembolso nacional</p>
+                                                            <p className="text-custom3 line-through">Reembolso
+                                                                nacional</p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-5">
                                                             <FaHeart className="w-3.5 h-3.5 text-custom3"/>
-                                                            <p className="text-custom3 line-through">Reembolso internacional</p>
+                                                            <p className="text-custom3 line-through">Reembolso
+                                                                internacional</p>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -206,7 +224,8 @@ const Step3 = () => {
                                         <div className="mt-8">
                                             <div className="border-2 border-custom4 rounded-lg">
                                                 <div className="bg-custom4 text-center py-2">
-                                                    <p className="text-custom2 font-extrabold text-14">Cuentas con estos beneficios:</p>
+                                                    <p className="text-custom2 font-extrabold text-14">Cuentas con estos
+                                                        beneficios:</p>
                                                 </div>
                                                 <div className="flex py-6 px-8">
                                                     <div className="w-8/12">
@@ -230,27 +249,33 @@ const Step3 = () => {
                                                     <ul>
                                                         <li className="flex items-center gap-3">
                                                             <FaHeart className="w-3.5 h-3.5 text-primary"/>
-                                                            <p className="text-xl">Lima <span className="text-12">(zona de cobertura)</span></p>
+                                                            <p className="text-xl">Lima <span className="text-12">(zona de cobertura)</span>
+                                                            </p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-6">
                                                             <FaHeart className="w-3.5 h-3.5 text-primary"/>
-                                                            <p className="text-xl">+30 clínicas <span className="text-12">(en red afiliada)</span></p>
+                                                            <p className="text-xl">+30 clínicas <span
+                                                                className="text-12">(en red afiliada)</span></p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-5">
                                                             <FaHeart className="w-3.5 h-3.5 text-custom3"/>
-                                                            <p className="text-custom3 line-through">Médico a domicilio</p>
+                                                            <p className="text-custom3 line-through">Médico a
+                                                                domicilio</p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-5">
                                                             <FaHeart className="w-3.5 h-3.5 text-custom3"/>
-                                                            <p className="text-custom3 line-through">Chequeos preventivos</p>
+                                                            <p className="text-custom3 line-through">Chequeos
+                                                                preventivos</p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-5">
                                                             <FaHeart className="w-3.5 h-3.5 text-custom3"/>
-                                                            <p className="text-custom3 line-through">Reembolso nacional</p>
+                                                            <p className="text-custom3 line-through">Reembolso
+                                                                nacional</p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-5">
                                                             <FaHeart className="w-3.5 h-3.5 text-custom3"/>
-                                                            <p className="text-custom3 line-through">Reembolso internacional</p>
+                                                            <p className="text-custom3 line-through">Reembolso
+                                                                internacional</p>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -261,7 +286,8 @@ const Step3 = () => {
                                         <div className="mt-8">
                                             <div className="border-2 border-custom4 rounded-lg">
                                                 <div className="bg-custom4 text-center py-2">
-                                                    <p className="text-custom2 font-extrabold text-14">Cuentas con estos beneficios:</p>
+                                                    <p className="text-custom2 font-extrabold text-14">Cuentas con estos
+                                                        beneficios:</p>
                                                 </div>
                                                 <div className="flex py-6 px-8">
                                                     <div className="w-8/12">
@@ -285,27 +311,33 @@ const Step3 = () => {
                                                     <ul>
                                                         <li className="flex items-center gap-3">
                                                             <FaHeart className="w-3.5 h-3.5 text-primary"/>
-                                                            <p className="text-xl">Lima <span className="text-12">(zona de cobertura)</span></p>
+                                                            <p className="text-xl">Lima <span className="text-12">(zona de cobertura)</span>
+                                                            </p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-6">
                                                             <FaHeart className="w-3.5 h-3.5 text-primary"/>
-                                                            <p className="text-xl">+30 clínicas <span className="text-12">(en red afiliada)</span></p>
+                                                            <p className="text-xl">+30 clínicas <span
+                                                                className="text-12">(en red afiliada)</span></p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-5">
                                                             <FaHeart className="w-3.5 h-3.5 text-custom3"/>
-                                                            <p className="text-custom3 line-through">Médico a domicilio</p>
+                                                            <p className="text-custom3 line-through">Médico a
+                                                                domicilio</p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-5">
                                                             <FaHeart className="w-3.5 h-3.5 text-custom3"/>
-                                                            <p className="text-custom3 line-through">Chequeos preventivos</p>
+                                                            <p className="text-custom3 line-through">Chequeos
+                                                                preventivos</p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-5">
                                                             <FaHeart className="w-3.5 h-3.5 text-custom3"/>
-                                                            <p className="text-custom3 line-through">Reembolso nacional</p>
+                                                            <p className="text-custom3 line-through">Reembolso
+                                                                nacional</p>
                                                         </li>
                                                         <li className="flex items-center gap-3 mt-5">
                                                             <FaHeart className="w-3.5 h-3.5 text-custom3"/>
-                                                            <p className="text-custom3 line-through">Reembolso internacional</p>
+                                                            <p className="text-custom3 line-through">Reembolso
+                                                                internacional</p>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -323,12 +355,19 @@ const Step3 = () => {
                             <div className="py-6">
                                 <hr className="border-custom4 border"/>
                             </div>
-                            <div className="mt-12 flex justify-end">
-                                <button
-                                    className=" uppercase bg-primary text-white font-bold py-3 px-10 rounded-lg uppercase tracking-wide	"
-                                    type="button">
-                                    comprar plan
-                                </button>
+                            <div className="flex items-center mb-10">
+                                <div className="w-6/12">
+                                    <p className="uppercase text-custom5 text-center text-14 pl-5">ENVIAR COTIZACION POR CORREO</p>
+                                </div>
+                                <div className="w-6/12 flex justify-end">
+                                    <button
+                                        className="text-14 uppercase bg-primary text-white font-bold py-3 px-10 rounded-lg uppercase tracking-wider"
+                                        type="button"
+                                        onClick={()=>next()}
+                                    >
+                                        comprar plan
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>

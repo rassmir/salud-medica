@@ -4,7 +4,13 @@ import Base from "../assets/img/Base.png"
 import block from "../assets/img/block.png"
 import mobile from "../assets/img/mobile.png"
 
-const Step1 = () => {
+const Step1 = (props) => {
+    const next = () => {
+        props.nextStep();
+    };
+    const prev = () => {
+        props.prevStep();
+    };
     return (
         <Fragment>
             <div className="flex">
@@ -88,7 +94,7 @@ const Step1 = () => {
                         <div className="w-11/12">
                             <p className="text-sm text-custom2 font-OpenSans-Lt">Acepto la
                                 <a href="" className="underline font-OpenSans-Rg"> Política de Protección de Datos
-                                Personales y los Términos y Condiciones</a>
+                                    Personales y los Términos y Condiciones</a>
                             </p>
                         </div>
                     </div>
@@ -107,7 +113,9 @@ const Step1 = () => {
                     <div className="mt-12">
                         <button
                             className="shadow bg-primary text-custom3 font-bold py-4 px-8 rounded-lg uppercase"
-                            type="button">
+                            type="button"
+                            onClick={()=>next()}
+                        >
                             Comencemos
                         </button>
                     </div>

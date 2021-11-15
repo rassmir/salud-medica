@@ -12,7 +12,8 @@ module.exports = {
             },
             fontSize: {
                 12: '12px',
-                14: '14px'
+                14: '14px',
+                16: '16px'
             },
             padding: {
                 pdr: '36rem',
@@ -27,6 +28,7 @@ module.exports = {
                 custom2: '#8D93AB',
                 custom3: '#C5CBE0',
                 custom4: '#F0F2FA',
+                custom5: '#939DFF',
                 green: {
                     primary: '#83CC5E'
                 }
