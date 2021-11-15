@@ -42,7 +42,6 @@ const Index = () => {
             return (
                 <Step1
                     nextStep={nextStep}
-                    prevStep={prevStep}
                 />
             );
         case 2:

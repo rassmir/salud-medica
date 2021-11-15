@@ -8,9 +8,6 @@ const Step1 = (props) => {
     const next = () => {
         props.nextStep();
     };
-    const prev = () => {
-        props.prevStep();
-    };
     return (
         <Fragment>
             <div className="flex">

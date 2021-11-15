@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import {withRouter} from 'react-router-dom';
-import Base from "../assets/img/Base.png";
+import Nav from "../components/Nav";
 const Final = () => {
     const home = () => {
         window.location.reload()
@@ -9,7 +9,7 @@ const Final = () => {
         <Fragment>
             <div className="flex">
                 <div className="w-3/12">
-                    <img src={Base} alt="" className="h-bg lg:h-bgLg"/>
+                    <Nav/>
                 </div>
                 <div className="w-9/12 mt-60 text-custom ml-52 pr-pdr">
                     <hr className="border-custom4 border"/>

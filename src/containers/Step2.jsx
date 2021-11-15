@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react';
 import {withRouter} from 'react-router-dom';
-import Base from "../assets/img/Base.png"
+import {AiOutlineLeftCircle} from "react-icons/all";
+import Nav from "../components/Nav";
 
 const Step2 = (props) => {
     const next = () => {
@@ -13,13 +14,27 @@ const Step2 = (props) => {
         <Fragment>
             <div className="flex gap-52">
                 <div className="w-3/12">
-                    <img src={Base} alt="" className="h-bg lg:h-bgLg"/>
+                    <Nav/>
                 </div>
-                <div className="w-9/12 mt-20 text-custom">
-                    <p className="text-custom text-3xl font-OpenSans-Lt">Hola,
-                        <span className="text-primary font-OpenSans-Rg"> Rassmir</span>
-                    </p>
-                    <p className="mt-4 text-sm">Valida que los datos sean correctos.</p>
+                <div className="w-9/12 mt-20 text-custom font-OpenSans-Rg">
+                    <div className="flex items-center gap-3">
+                        <div>
+                            <button className="text-primary"
+                                onClick={()=>prev()}
+                            >
+                                <AiOutlineLeftCircle className="w-6 h-6"/>
+                            </button>
+                        </div>
+                        <div>
+                            <p className="text-12 text-primary">Paso 1 <span className="uppercase text-custom3">de 7</span></p>
+                        </div>
+                    </div>
+                    <div className="mt-6">
+                        <p className="text-custom text-3xl font-OpenSans-Lt">Hola,
+                            <span className="text-primary font-OpenSans-Rg"> Rassmir</span>
+                        </p>
+                        <p className="mt-4 text-sm">Valida que los datos sean correctos.</p>
+                    </div>
                     <div className="mt-8">
                         <p className="font-OpenSans-Lt">Datos personales del titular</p>
                         <div className="mt-4 pr-pdr">
@@ -89,7 +104,7 @@ const Step2 = (props) => {
                             </div>
                             <div className="mt-12 flex justify-end">
                                 <button
-                                    className="bg-custom4 text-custom3 font-bold py-4 px-8 rounded-lg uppercase"
+                                    className="bg-custom4 text-custom3 font-bold py-4 px-8 rounded-lg uppercase mb-10"
                                     type="button"
                                     onClick={()=>next()}
                                 >
