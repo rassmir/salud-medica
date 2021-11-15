@@ -74,6 +74,11 @@ const Step2 = (props) => {
                             <div className="mt-4">
                                 <input
                                     className="block w-full text-gray-700 border border-gray-200 rounded py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    type="text" placeholder="Apellido Materno"/>
+                            </div>
+                            <div className="mt-4">
+                                <input
+                                    className="block w-full text-gray-700 border border-gray-200 rounded py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                     type="date" placeholder="Fecha De Nacimiento"/>
                             </div>
                             <div className="mt-4">
